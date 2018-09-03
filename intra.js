@@ -6,7 +6,7 @@ http.onreadystatechange = function() {
             let result = "";
             for (let i = 0; i < 5; i++)
                 result += "<div><h3>" + json[i].title + "</h3>" + json[i].content + "</div><br/><hr><br/>"
-            document.getElementById('message').innerHTML = result;
+            document.getElementById('message').innerHTML = result.replace('<a href=\"', '<a target="_blank" href=\"https://intra.epitech.eu');
         } else {
             document.getElementById('message').innerHTML = "An error occured while loading messages.";
         }
