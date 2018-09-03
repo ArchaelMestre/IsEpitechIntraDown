@@ -16,6 +16,4 @@ function checkIntra() {
 }
 
 checkIntra();
-setInterval(function () {
-   checkIntra();
-}, 3000);
+setInterval(checkIntra, 3000);
