@@ -1,0 +1,6 @@
+{
+  "name": "Is Epitech Intra Down",
+  "version": "1.0",
+  "description": "Chrome extension to know if the EPITECH intranet is down or not.",
+  "manifest_version": 2
+}
