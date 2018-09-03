@@ -2,7 +2,7 @@ div {
     width: max-content;
 }
 
-a {
+#title a {
     text-decoration: unset;
     color: black;
 }

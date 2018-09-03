@@ -2,11 +2,15 @@ let http = new XMLHttpRequest();
 http.onreadystatechange = function() {
     if (this.readyState === 4) {
         if (this.status === 200) {
-            document.getElementById('message').innerHTML = "OK";
+            let json = JSON.parse(this.responseText);
+            let result = "";
+            for (let i = 0; i < 5; i++)
+                result += "<div><h3>" + json[i].title + "</h3>" + json[i].content + "</div><br/><hr><br/>"
+            document.getElementById('message').innerHTML = result;
         } else {
-            document.getElementById('message').innerHTML = "ERROR";
+            document.getElementById('message').innerHTML = "An error occured while loading messages.";
         }
     }
 };
-http.open("HEAD", "https://intra.epitech.eu/user/notification/message?format=json", true);
+http.open("GET", "https://intra.epitech.eu/user/notification/message?format=json", true);
 http.send();
