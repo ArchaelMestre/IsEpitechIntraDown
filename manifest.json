@@ -2,10 +2,9 @@
   "name": "Is Epitech Intra Down",
   "version": "1.0",
   "description": "Chrome extension to know if the EPITECH intranet is down or not.",
-  /*"background": {
-    "scripts": [ "script.js" ],
-    "persistent": true
-  },*/
+  "icons": {
+    "100": "Icon.png"
+  },
   "browser_action": {
     "default_popup": "index.html"
   },
