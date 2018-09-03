@@ -4,7 +4,7 @@ function checkIntra() {
     var http = new XMLHttpRequest();
     http.onreadystatechange = function() {
         if (this.readyState === 4) {
-            if (this.status === 200) {
+            if (this.status === 200 || this.status === 401) {
                 chrome.browserAction.setBadgeBackgroundColor({ color: [0, 255, 0, 255] });
             } else {
                 chrome.browserAction.setBadgeBackgroundColor({ color: [255, 0, 0, 255] });
