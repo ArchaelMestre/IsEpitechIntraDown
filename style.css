@@ -1,0 +1,8 @@
+div {
+    width: max-content;
+}
+
+a {
+    text-decoration: unset;
+    color: black;
+}
