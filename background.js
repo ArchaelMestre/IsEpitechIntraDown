@@ -19,4 +19,4 @@ function checkIntra() {
 }
 
 checkIntra();
-setInterval(checkIntra, 3000);
+setInterval(checkIntra, 10000);
