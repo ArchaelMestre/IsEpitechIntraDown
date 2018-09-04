@@ -2,6 +2,7 @@ chrome.browserAction.setBadgeText({text: " " })
 
 function checkIntra() {
     var http = new XMLHttpRequest();
+    http.timeout = 3000;
     http.onreadystatechange = function() {
         if (this.readyState === 4) {
             if (this.status === 200 || this.status === 401) {
