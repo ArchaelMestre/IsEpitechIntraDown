@@ -11,7 +11,7 @@ http.onreadystatechange = function() {
             }
             document.getElementById('message').innerHTML = "<div>" + result.replace(/<a href=\"/g, '<a target="_blank" href=\"https://intra.epitech.eu') + "</div>";
         } else if (this.status == 401) {
-            document.getElementById('message').innerHTML = "<div><a href='https://intra.epitech.eu'>Please log in your account</a></div>";
+            document.getElementById('message').innerHTML = "<div><a href='https://intra.epitech.eu' target='_blank'>Please log in your account</a></div>";
         } else {
             document.getElementById('message').innerHTML = "An error occured while loading messages.";
         }
