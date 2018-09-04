@@ -13,8 +13,7 @@
     "default_popup": "index.html"
   },
   "permissions": [
-    "https://intra.epitech.eu/",
-    "https://google.com/"
+    "https://intra.epitech.eu/"
   ],
   "manifest_version": 2
 }
